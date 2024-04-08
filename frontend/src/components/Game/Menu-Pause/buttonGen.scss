@@ -1,0 +1,23 @@
+.menuPause-bp {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border:none;
+    cursor:pointer;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

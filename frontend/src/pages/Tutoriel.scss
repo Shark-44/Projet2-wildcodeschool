@@ -1,0 +1,78 @@
+// WRAP GENERAL
+.wrap-tutoriel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 130px;
+}
+
+//Panneau general
+.Grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+  width: 70%;
+
+  .SousGrid {
+    display: flex;
+    justify-content: space-around;
+    height: 33%;
+    width: 100%;
+    align-items: center;
+
+    img {
+      height: 60%;
+      width: auto;
+    }
+
+    span {
+      font-size: clamp(1em, 2.5vw, 1.5rem);
+    }
+
+    //panneau touche
+    .panelinfo {
+      display: flex;
+      background-image: url("../src/assets/img/tutoriel/table 4.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      /*box-sizing: border-box;*/
+      height: 60%;
+      width: 15%;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #ca6838;
+    }
+  }
+}
+
+//bouton retour au jeu
+.wrap-bouton {
+  display: flex;
+  align-items: flex-end;
+  width: 10%;
+  height: 70%;
+  font-size: 1rem;
+
+  // Bouton retour
+  .butonreturn {
+    height: 15%;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-height: 400px) {
+  .Grid .SousGrid .panelinfo {
+    font-size: 1rem;
+  }
+}

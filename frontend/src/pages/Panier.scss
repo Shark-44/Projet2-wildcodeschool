@@ -1,0 +1,152 @@
+.wrap-panier {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrap-table {
+    height: 85%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Panier-bg {
+      position: relative;
+      height: 100%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 100%;
+        width: 85%;
+      }
+
+      .table {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6vh;
+      }
+    }
+  }
+}
+
+.card {
+  width: 70%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .planche {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+    }
+
+    .item {
+      width: 200%;
+      height: 3vw;
+    }
+  }
+}
+
+.mushDispoStart {
+  position: relative;
+  width: 45%;
+  height: 12%;
+  right: 17%;
+  bottom: 10%;
+
+  p {
+    width: 100%;
+    height: 8vw;
+    position: relative;
+    top: 35%;
+    left: 12%;
+  }
+  img {
+    position: absolute;
+  }
+}
+
+.mushDispoEnd {
+  position: relative;
+  width: 45%;
+  height: 12%;
+  left: 20%;
+  top: 5%;
+
+  p {
+    width: 100%;
+    height: 8vw;
+    position: relative;
+    top: 35%;
+    left: 17%;
+  }
+
+  img {
+    position: absolute;
+  }
+}
+
+.button-valid {
+  position: relative;
+  width: 5vw;
+  height: 10vw;
+  top: 10vw;
+  right: 3vw;
+
+  p {
+    position: relative;
+    top: 30px;
+    left: 16px;
+  }
+
+  // .valid{
+  //   position: absolute;
+  //   top:30px;
+  //   left:-23%;
+  //   background: none;
+  //   border:none;
+
+  // }
+  img {
+    position: absolute;
+    width: 210px;
+    height: 100px;
+  }
+}
+
+.total {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  p {
+    width: 100%;
+    height: 12%;
+  }
+}
+.tableau {
+  width: 100%;
+  height: 10%;
+}

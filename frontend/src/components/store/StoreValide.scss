@@ -1,0 +1,29 @@
+.storeChoiceValidation1 {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  align-items: center;
+
+  .storeChoiceButton1 {
+    background-image: url("../../assets/img/03_Tablettes/validation.png");
+    background-size: 150px;
+    width: 150px;
+    height: 106px;
+
+    .buttonLinkStoreToPanier {
+      display: table-cell;
+      vertical-align: middle;
+      width: 150px;
+      height: 106px;
+      text-align: center;
+
+      a {
+        font-family: "Naluka";
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.numberItem {
+  position: relative;
+  font-family: "Naluka";
+  font-style: normal;
+  font-size: larger;
+  color: #fef2f2;
+  width: 20vw;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: white;
+    width: 8vw;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input1 {
+    position: relative;
+    color: white;
+    font-family: "Naluka";
+    background: none;
+    border: none;
+    font-size: larger;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+  }
+
+  .input2 {
+    position: relative;
+    color: white;
+    font-family: "Naluka";
+    background: none;
+    border: none;
+    font-size: larger;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+  }
+}
+.price {
+  display: flex;
+  justify-content: flex-end;
+}

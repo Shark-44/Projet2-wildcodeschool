@@ -1,0 +1,51 @@
+.Game-content {
+  height: 91vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+// ----------------GESTION DU MENU PAUSE------------------
+.wrap-GameNav {
+  display: flex;
+  align-items: center;
+  height: 9vh;
+  width: 100vw;
+}
+
+.menuPauseFS {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 20;
+
+  .menuSelectScore {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffffac;
+  }
+
+  .menuPauseOn {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffffac;
+  }
+
+  .menuPauseOff {
+    height: 100vh;
+    width: 100%;
+    background-color: none;
+  }
+}
+
+.wrap-CoinCounter {
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+}
+
+.wrap-finPartie {
+  height: 100%;
+  width: 100%;
+}

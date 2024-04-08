@@ -1,0 +1,29 @@
+.NavBarGlobal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* AJUSTE TAILLE BP GAUCHE */
+.NavBar-Left {
+  display: flex;
+  height: 100%;
+  // align-items: center;
+}
+
+.NavBar-Right {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  // align-items: center;
+
+  .navBarPanierBttn {
+    height: 100px;
+    width: 25%;
+  }
+}

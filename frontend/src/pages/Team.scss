@@ -1,0 +1,245 @@
+// @media screen and (max-width < 950px) {
+
+// }
+
+.teamGlobal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 10%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-70px);
+
+  .titleBack {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    img {
+      // object-fit: contain;
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+  .titleFront {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+
+    span {
+      height: 90%;
+      width: 90%;
+      color: white;
+      font-size: clamp(1em, 2vw, 2em);
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 0.5vh;
+      align-items: center;
+    }
+  }
+}
+
+.carrousel {
+  height: 85%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+
+  .carrousel__item {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .item_center {
+      box-sizing: border-box;
+      height: 150%;
+      width: 150%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+
+      img {
+        height: 150%;
+        width: 150%;
+      }
+
+      .overlay {
+        height: 15%;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 1vh;
+        color: white;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 4vh;
+
+        .overlay__text {
+          height: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 1.75vw;
+        }
+      }
+    }
+  }
+
+  .item_int {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: 5;
+  }
+
+  .int_left {
+    position: relative;
+    left: 20px;
+  }
+
+  .int_right {
+    position: relative;
+    left: -20px;
+  }
+
+  .ext_left {
+    position: relative;
+    left: 30px;
+  }
+
+  .ext_right {
+    position: relative;
+    left: -30px;
+  }
+
+  .item_ext {
+    opacity: 0.33;
+    z-index: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; // Ne marche pas !
+  align-items: center;
+  height: 12%;
+  width: 50%;
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+
+  .boutton {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      object-fit: contain;
+    }
+  }
+
+  .btPrecedent {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .btSuivant {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+  }
+
+  input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .teamMateGlobal {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .teamMateImg {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    top: 5px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .teamMateText {
+    height: 50%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    font-size: clamp(1em, 2vw, 2em);
+    color: white;
+    top: 20px;
+  }
+}

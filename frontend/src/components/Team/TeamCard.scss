@@ -1,0 +1,29 @@
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+
+  // background-color: blueviolet; // Pour test
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+  }
+}
+
+.anim {
+  animation: transitionImage 1s ease-in-out;
+}
+
+@keyframes transitionImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

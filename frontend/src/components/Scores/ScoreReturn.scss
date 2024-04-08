@@ -1,0 +1,53 @@
+/* CONTENEUR */
+.panelScore {
+  height: 90%;
+  width: 100%;
+  color: #844c23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+}
+
+/* TABLE */
+table {
+  height: 80%;
+  width: 70%;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+/* TITRE */
+thead {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  // background-color: yellow;
+
+  tr {
+    height: 10%;
+  }
+
+  th {
+    height: 10%;
+  }
+}
+
+/* BODY */
+tbody {
+  height: 90%;
+  width: 100%;
+  text-align: left;
+  text-align: center;
+
+  tr {
+    height: 20%;
+    width: 100%;
+    // background-color: yellow;
+    td {
+      height: 20%;
+      width: 30%;
+      // background-color: brown;
+    }
+  }
+}

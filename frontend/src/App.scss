@@ -1,0 +1,116 @@
+/* ==================== GENERAL ===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+
+  @font-face {
+    font-family: "Naluka";
+    src: url(../src/assets/fonts/NalukaRegular-w1q6Z.ttf) format("truetype");
+  }
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* =================== POLICES ======================== */
+body,
+input,
+textarea,
+button {
+  font-family: "Naluka", sans-serif;
+}
+/* ================ IMAGE DE FOND ===================== */
+
+.backgroundImg {
+  position: absolute;
+  z-index: 0;
+}
+
+/* ============== DEFIITION CADRE GENERAL ============ */
+
+// BODY
+.wrap-app {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  // NAVBAR
+  .wrap-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    width: 100vw;
+    margin: 10px;
+  }
+
+  // CONTENT
+  .wrap-content {
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    // flex-direction: column;
+  }
+
+  .wrap-content-game {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* =================== BOUTON SON ===================== */
+#soundGeneralActive {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  height: 55px;
+  width: 50px;
+  aspect-ratio: 3/2;
+  background: none;
+  border: none;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* ==================================================== */
+
+// @media screen and (max-width: 450px) {
+//   .bg-img {
+//     height: 100%;
+//     width: 100%;
+//     z-index: 0;
+
+//     img {
+//       height: 100%;
+//       width: 100%;
+//       object-fit: cover;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 700px) {
+//   .bg-img {
+//     height: 100%;
+//     width: 100%;
+//     z-index: 0;
+
+//     img {
+//       height: 100%;
+//       width: 100%;
+//       object-fit: cover;
+//     }
+//   }
+// }

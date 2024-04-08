@@ -1,0 +1,47 @@
+.wrap-LoginForm {
+  height: 70%;
+  width: auto;
+  aspect-ratio: 2.5/3;
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.appearY {
+  transform: translateY(0%);
+}
+
+.appearX {
+  animation: rotateAnimation 1s;
+}
+
+.Login-bgForm {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  #loginForm-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .Login-signin {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

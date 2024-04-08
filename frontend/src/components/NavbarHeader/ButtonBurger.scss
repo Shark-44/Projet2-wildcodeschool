@@ -1,0 +1,132 @@
+.globalNav {
+  font-family: "naluka", sans-serif;
+  height: 100%;
+  width: 10%;
+  max-width: 220px;
+  // min-width: 150px;
+  margin-right: 10px;
+}
+
+.StylButtonBurger {
+  cursor: pointer;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    position: relative;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+
+    img {
+      position: absolute;
+      box-sizing: border-box;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+    }
+  }
+}
+
+.navbar {
+  opacity: 0.9;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0px;
+  margin-top: 10vh;
+  height: 30%;
+  width: 10%;
+  animation: decalage 0.2s ease-in;
+  padding: 30px;
+
+  .navbar__links {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000be;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+
+    .navbar__item {
+      height: 25%;
+      letter-spacing: 2px;
+      width: 100%;
+      // background-color: rgba(0, 128, 0, 0.236);
+
+      .navbar__link {
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        // background-color: rgba(255, 0, 0, 0.283);
+      }
+    }
+  }
+}
+
+.navbar__item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+@keyframes decalage {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes hideBurger {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+    display: none;
+  }
+}
+
+.navbar__item:hover {
+  background-color: #f1ba4f;
+  border-radius: 20px;
+}
+
+.hide-nav {
+  // display: none;
+  animation: hideBurger 0.5s forwards;
+}
+
+.show-Nav {
+  margin-top: 15vh;
+}

@@ -1,0 +1,94 @@
+.navBarCartBttn {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+
+  .imgCartDisplay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+
+  .buttonCart {
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fullCartBttn {
+      height: 90%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .cartTotalBttn {
+        height: 33%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // transform: rotate(-15deg);
+      }
+
+      .imgFullCart {
+        height: 50%;
+        width: auto;
+        aspect-ratio: 1/1;
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    .emptyCartBttn {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .emptyCartMessage {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 3px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .emptyCartMessage {
+    font-size: 2rem;
+  }
+
+  .cartTotalBttn {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .emptyCartMessage {
+    font-size: 1rem;
+  }
+
+  .cartTotalBttn {
+    font-size: 1rem;
+  }
+}

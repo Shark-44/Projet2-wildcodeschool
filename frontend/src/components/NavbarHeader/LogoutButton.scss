@@ -1,0 +1,156 @@
+.wrap-signout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 4px;
+
+  span {
+    display: flex;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    font-size: large;
+    letter-spacing: 3px;
+    padding-top: 10px;
+  }
+}
+
+.BtnLogout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #e74d4d;
+}
+
+/* plus sign */
+.signLogout-2 {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signLogout-2 svg {
+  width: 17px;
+}
+
+.signLogout-2 svg path {
+  fill: white;
+}
+/* text */
+.textButtonLogoutBurger-2 {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  top: 4px;
+  color: white;
+  font-size: 1rem;
+  transition-duration: 0.3s;
+}
+/* hover effect on button width */
+.BtnLogout:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+.BtnLogout:hover .signLogout-2 {
+  width: 30%;
+  transition-duration: 0.3s;
+  // padding-left: 20px;
+}
+/* hover effect button's text */
+.BtnLogout:hover .textButtonLogoutBurger-2 { 
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+/* button click effect*/
+//   .BtnLogout:active {
+//     transform: translate(2px ,2px);
+//   }
+
+.BtnLogIn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #55754a;
+}
+
+/* plus sign */
+.signLogout-1 {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signLogout-1 svg {
+  width: 17px;
+  transform: scaleX(-1);
+}
+
+.signLogout-1 svg path {
+  fill: white;
+}
+/* text */
+.textButtonLogoutBurger-1 {
+  position: absolute;
+  right: 1%;
+  width: 0%;
+  top: 10px;
+  color: white;
+  font-size: 1.5rem;
+  transition-duration: 0.3s;
+}
+
+.BtnLogIn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+.BtnLogIn:hover .signLogout-1 {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 90px;
+}
+/* hover effect button's text */
+.BtnLogIn:hover .textButtonLogoutBurger-1 {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 20px;
+}
+/* button click effect*/
+//   .BtnLogIn:active {
+//     transform: translate(2px ,2px);
+//   }

@@ -1,0 +1,86 @@
+.titleDeleteProfil {
+  span {
+    width: 100%;
+    height: 30%;
+    font-size: 2.5vw;
+    text-decoration: underline;
+    text-underline-offset: 0.9rem;
+  }
+}
+
+.deleteProfilSub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+
+  #titleInputProfilDelete {
+    width: 100%;
+    height: 8%;
+    font-size: 1.5vw;
+    text-decoration: none;
+  }
+
+  input {
+    width: 40%;
+    height: 5%;
+  }
+}
+
+.buttonDeleteProfil {
+  width: 10%;
+  height: 15%;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  position: relative;
+  margin-top: 8%;
+}
+
+.svgIcon {
+  width: 50%;
+  transition-duration: 0.5s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.buttonDeleteProfil:hover {
+  width: 30%;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.buttonDeleteProfil:hover .svgIcon {
+  width: 30%;
+  transition-duration: 0.1s;
+  transform: translateY(3.5%);
+}
+
+.buttonDeleteProfil::before {
+  position: absolute;
+  top: -30px;
+  content: "Supprimer";
+  color: white;
+  transition-duration: 0.3s;
+  font-size: 1vw;
+}
+
+.buttonDeleteProfil:hover::before {
+  font-size: 1vw;
+  opacity: 1;
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}

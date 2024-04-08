@@ -1,0 +1,246 @@
+.containerUsers {
+  position: relative;
+  z-index: 1;
+  height: 80%;
+  width: 80%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  #btn-back {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    background-image: url("../../assets/img/01_Boutons/back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  #logo {
+    max-height: 30%;
+    aspect-ratio: 147/50;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .panneauWood {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/img/03_Tablettes/bg_4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-sizing: border-box;
+    width: 40%;
+    height: 60%;
+    min-width: 200px;
+    min-height: 100px;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    .panneauWood-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .panneauWood-title {
+        height: 20%;
+        width: 100%;
+        animation: titreBouge ease-in 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color:grey;
+
+        h2 {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          box-sizing: border-box;
+          font-family: "naluka";
+          color: white;
+          font-size: 2rem;
+          text-align: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .panneauWood-link {
+        height: 70%;
+        width: 100%;
+        visibility: visible;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //   background-color:aqua;
+        flex-direction: column;
+      }
+
+      .Invited {
+        height: 30%;
+        width: 70%;
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        .input-form {
+          width: 70%;
+          height: 60%;
+          border-radius: 20px;
+          text-align: center;
+        }
+
+        #btn-choiceUser-invite {
+          height: 50%;
+          width: 30%;
+          border-radius: 20px;
+          font-size: medium;
+          // border: transparent;
+          cursor: pointer;
+        }
+      }
+
+      .Loggin {
+        height: 60%;
+        width: 80%;
+        // background-color: blue;
+        border-top: 4px dashed white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .useLogged-text-playas {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          justify-content: center;
+          font-size: x-large;
+          color: white;
+        }
+
+        #btn-choiceUser-log {
+          // margin-top: 20px;
+          height: 60%;
+          width: 80%;
+          background-color: #2f3c2a;
+          border-radius: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
+          color: white;
+          border: 4px solid white;
+          animation: animLoggin ease-in-out 2s infinite;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.error {
+  border: 4px solid red;
+  animation: inputError ease 0.5s;
+}
+
+#btn-choiceUser-log:hover {
+  background-color: blueviolet;
+}
+
+#btn-choiceUser-invite:hover {
+  background-color: #2f3c2a;
+  color: white;
+  border: 4px solid white;
+}
+
+@keyframes inputError {
+  0% {
+    transform: translateX(-2%);
+  }
+
+  20% {
+    transform: translateX(4%);
+  }
+
+  40% {
+    transform: translateX(-5%);
+  }
+
+  60% {
+    transform: translateX(3%);
+  }
+
+  80% {
+    transform: translateX(-2%);
+  }
+
+  100% {
+    transform: translateX(2%);
+  }
+}
+
+@keyframes titreBouge {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  20% {
+    transform: rotate(20deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animLoggin {
+  0% {
+    box-shadow: 1px 1px 52px 20px rgb(255 251 251 / 40%);
+  }
+
+  50% {
+    box-shadow: 1px 1px 52px 1px rgb(255 251 251 / 40%);
+  }
+
+  100% {
+    box-shadow: 1px 1px 52px 25px rgb(255 251 251 / 40%);
+  }
+}

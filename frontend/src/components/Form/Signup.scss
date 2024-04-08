@@ -1,0 +1,234 @@
+.wrap-signup {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  #btn-back {
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    background-image: url("../../assets/img/01_Boutons/back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  #signin-title {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  #signin-2 {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .text-registered {
+    width: 100%;
+    height: 40%;
+
+    span {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      text-align: center;
+      line-height: 100px;
+
+      // transform: rotate(-30deg);
+    }
+  }
+
+  .wrap-signup-content {
+    height: 65%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+
+    .pseudo {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .email {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pass {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .log-validation {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      margin-top: 25px;
+
+      button {
+        height: 50%;
+        width: 50%;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+
+        .btn-emoji,
+        .btn-text {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+
+        .btn-emoji {
+          height: 100%;
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          padding-right: 10px;
+          padding-bottom: 8px;
+        }
+
+        .btn-text {
+          height: 100%;
+          width: fit-content;
+        }
+      }
+
+      span {
+        // margin-top:10px;
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.input_form {
+  height: 20%;
+  width: 70%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+label {
+  text-align: center;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back {
+  background-color: #852a2a;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#register {
+  background-color: #2f2f2f;
+  color: white;
+}
+
+#back:hover,
+#register:hover {
+  background-color: white;
+  color: black;
+}
+
+.text-wrong-informations {
+  font-size: small;
+}
+
+.wrap-err-saisie {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .error-saisie {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    height: fit-content;
+    // padding:1rem;
+    box-sizing: border-box;
+    color: red;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.erreur {
+  border: 6px solid red;
+  animation: inputError ease 0.5s;
+}
+
+@keyframes inputError {
+  0% {
+    transform: translateX(-2%);
+  }
+
+  20% {
+    transform: translateX(4%);
+  }
+
+  40% {
+    transform: translateX(-5%);
+  }
+
+  60% {
+    transform: translateX(3%);
+  }
+
+  80% {
+    transform: translateX(-2%);
+  }
+
+  100% {
+    transform: translateX(2%);
+  }
+}

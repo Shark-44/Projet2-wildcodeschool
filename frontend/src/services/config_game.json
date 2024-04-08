@@ -1,0 +1,110 @@
+{
+  "monkey": {
+    "size": {
+      "height": 140,
+      "width": 140
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "speed": {
+      "dist": 10,
+      "duration": 12
+    },
+    "jump": {
+      "dist": 4,
+      "duration": 8
+    },
+    "imgs": {
+      "monkeyLeft": "/src/assets/img/02_Images/monkey/monkey_left.gif",
+      "monkeyRight": "/src/assets/img/02_Images/monkey/monkey_right.gif",
+      "monkeyStatic": "/src/assets/img/02_Images/monkey/monkey_static.png"
+    }
+  },
+
+  "pieces": {
+    "size": {
+      "height": 110,
+      "width": 110
+    },
+    "speed": {
+      "dist": 10,
+      "duration": 12
+    },
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "imgs": {
+      "src": "/src/assets/img/02_Images/Mushrooms/mush.gif"
+    },
+    "gap": 70
+  },
+
+  "obstacles": {
+    "types": [
+      {
+        "name": "oiseau",
+        "moving": true,
+        "damage": 1,
+        "size": {
+          "height": 120,
+          "width": 120
+        },
+        "speed": {
+          "dist": 10,
+          "duration": 12
+        },
+        "imgSrc": "/src/assets/img/02_Images/Obstacles/oiseau.gif"
+      },
+      {
+        "name": "pierre",
+        "damage": 1,
+        "moving": false,
+        "size": {
+          "height": 90,
+          "width": 90
+        },
+        "speed": {
+          "dist": 0,
+          "duration": 12
+        },
+        "imgSrc": "/src/assets/img/02_Images/Obstacles/pierre.png"
+      },
+      {
+        "name": "feu",
+        "damage": 1,
+        "moving": false,
+        "size": {
+          "height": 90,
+          "width": 90
+        },
+        "speed": {
+          "dist": 0,
+          "duration": 12
+        },
+        "imgSrc": "/src/assets/img/02_Images/Obstacles/feu.gif"
+      },
+      {
+        "name": "mehdi",
+        "damage": 3,
+        "moving": false,
+        "size": {
+          "height": 110,
+          "width": 110
+        },
+        "speed": {
+          "dist": 10,
+          "duration": 12
+        },
+        "imgSrc": "/src/assets/img/02_Images/Obstacles/mehdi.png"
+      }
+    ],
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "gap": 5
+  }
+}

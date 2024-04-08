@@ -1,0 +1,181 @@
+// CONTAINER PRINCIPAL HERITIER DE APP
+.wrapContainer-UserLevel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //    CONTAINER ENFANT (PLANCHE BOIS)
+  .InsideWrapUserLevel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50%;
+    height: 60%;
+    max-width: 800px;
+    max-height: 700px;
+    background-image: url(../../../assets/img/03_Tablettes/planche_1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    gap: 50px;
+    position: relative;
+
+    #btn-back {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      height: 60px;
+      width: 60px;
+      box-sizing: border-box;
+      background-image: url("../../../assets/img/01_Boutons/back.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    //       BOUTON PLAY
+    .buttonPlay-UserLevel {
+      display: flex;
+      align-items: baseline;
+      box-sizing: border-box;
+      max-width: 80%;
+      max-height: 20%;
+
+      .btnLog {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        #btn-StartGame {
+          height: 100%;
+          width: auto;
+          object-fit: contain;
+        }
+      }
+
+      #buttonPlayUser {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 2.8 / 2.5;
+      }
+    }
+
+    // CONTAINER PSEUDO, LEVEL ET INPUT
+    .input-UserLevel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 30%;
+      text-align: center;
+      box-sizing: border-box;
+      justify-content: space-between;
+      gap: 20px;
+
+      .pseudo-title,
+      .pseudo-name,
+      .level-title {
+        width: 50%;
+        height: 33%;
+        border: none;
+        font-family: "Naluka";
+        font-size: 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pseudo-title,
+      .level-title {
+        color: white;
+      }
+
+      .pseudo-name {
+        background-color: white;
+        color: black;
+        border-radius: 30px;
+      }
+
+      .level-title {
+        border-bottom: 4px solid white;
+      }
+    }
+
+    // CONTAINER BOUTONS CHOIX DIFFICULTE
+    .Wrap-buttonLevel-UserLevel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 80%;
+      max-height: 10%;
+
+      .buttonUserLevel {
+        width: 100%;
+        height: 100%;
+        font-family: "Naluka";
+        margin: 1%;
+        font-size: 2rem;
+        border: none;
+        background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+        background-color: #ededed;
+        border-radius: 30px;
+        display: inline-block;
+        cursor: pointer;
+        color: #777777;
+        text-decoration: none;
+        text-shadow: 0px 0px 0px #ffffff;
+      }
+
+      .buttonUserLevel:hover {
+        background: linear-gradient(to bottom, #2b3929 5%, #55754a 100%);
+        background-color: #2b3929;
+        color: white;
+      }
+
+      .active {
+        background: linear-gradient(to bottom, #2b3929 5%, #55754a 100%);
+        background-color: #2b3929;
+        color: white;
+      }
+
+      .error-level {
+        animation: inputError ease 0.5s;
+      }
+    }
+  }
+}
+
+@keyframes inputError {
+  0% {
+    transform: translateX(-2%);
+  }
+
+  20% {
+    transform: translateX(4%);
+  }
+
+  40% {
+    transform: translateX(-5%);
+  }
+
+  60% {
+    transform: translateX(3%);
+  }
+
+  80% {
+    transform: translateX(-2%);
+  }
+
+  100% {
+    transform: translateX(2%);
+  }
+}

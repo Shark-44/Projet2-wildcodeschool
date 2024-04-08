@@ -1,0 +1,62 @@
+.MainButton {
+  box-sizing: border-box;
+  height: 100px;
+  width: 25%;
+  display: block;
+
+  .MainButton-wrapImg {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    // background-color: green;
+
+    img {
+      position: absolute;
+      z-index: 2;
+      // object-fit: contain;
+      height: 100%;
+      width: 100%;
+    }
+
+    a {
+      position: absolute;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .MainButton-buttonLink {
+      box-sizing: border-box;
+      position: absolute;
+      z-index: 3;
+      height: 100%;
+      width: 100%;
+      background: none;
+      border: none;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .MainButton-buttonLink {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .MainButton-buttonLink {
+    font-size: 1rem;
+  }
+}
